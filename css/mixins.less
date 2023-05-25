@@ -1,0 +1,21 @@
+.xxl(@content){
+    @media screen and (min-width: @xxl){
+        @content();
+    }
+}
+
+.lg(@content){
+    @media screen and (min-width: @lg) and (max-width: (@xl - 1)){
+        @content();
+    }
+}
+.md(@content){
+    @media screen and (min-width: @md) and (max-width: (@lg - 1)){
+        @content();
+    }
+}
+.sm(@content){
+    @media screen and (min-width: @sm) and (max-width: (@md - 1)){
+        @content();
+    }
+}
