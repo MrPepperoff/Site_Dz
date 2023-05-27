@@ -3,7 +3,11 @@
         @content();
     }
 }
-
+.xl(@content){
+    @media screen and (min-width: @xl) and (max-width: (@xxl - 1)){
+        @content();
+    }
+}
 .lg(@content){
     @media screen and (min-width: @lg) and (max-width: (@xl - 1)){
         @content();
